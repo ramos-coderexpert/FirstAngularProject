@@ -10,7 +10,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
   productName = 'A Book';
   isDisabled = true;
   products = ['A Book', 'A Tree'];
-  private productsSubscription!: Subscription;
+  private productsSubscription: Subscription;
 
   constructor(private productsService: ProductsService) {
     setTimeout(() => {
